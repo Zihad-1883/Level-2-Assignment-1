@@ -20,8 +20,6 @@ function reverseString (input : string) : string{
     return reversedInput    
 }
 
-console.log(reverseString("typescript"));
-
 
 
 // Problem 3:
