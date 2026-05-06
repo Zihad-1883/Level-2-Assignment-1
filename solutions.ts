@@ -8,9 +8,19 @@ function filterEvenNumbers (input : number[]) : number[] {
 
 // Problem 2:
 
-function reverseString (input : string) : string {
-    return input.split('').toReversed().join('')
+function reverseString (input : string) : string{
+    let arr : string[] = []
+    let reversedInput : string = ''
+    for( let i of input){
+        arr.unshift(i)
+    }
+    arr.forEach(e => {
+        reversedInput = reversedInput.concat(e)
+    })
+    return reversedInput    
 }
+
+console.log(reverseString("typescript"));
 
 
 
