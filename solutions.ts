@@ -28,10 +28,10 @@ type StringOrNumber = string | number;
 
 function checkType (input : StringOrNumber) {
     if(typeof input === 'string'){
-        return '"String"'
+        return '"String";'
     }
     else if(typeof input === 'number'){
-        return '"Number"'
+        return '"Number";'
     }
 }
 
@@ -88,7 +88,7 @@ class Student extends Person{
     }
 
     getDetails () {
-        return `"Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}"`
+        return `"Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}";`
     }
 }
 
