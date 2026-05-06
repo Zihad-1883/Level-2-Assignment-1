@@ -100,10 +100,11 @@ class Student extends Person{
 function getIntersection (arr1 : number[] , arr2 : number[]) : number[] {
     let commonArray : number[] = [];
     arr1.forEach(e => {
-        if(arr2.includes(e)){
+        if(arr2.includes(e) && !commonArray.includes(e)){
             commonArray.push(e)
         }
     })
     return commonArray;
 }
 
+console.log(getIntersection([1, 2, 2, 3], [2, 2, 3]));
