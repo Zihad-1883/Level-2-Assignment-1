@@ -1,4 +1,3 @@
-// Problem 1:
 
 function filterEvenNumbers (input : number[]) : number[] {
     return input.filter(e => e % 2 === 0)
@@ -6,7 +5,6 @@ function filterEvenNumbers (input : number[]) : number[] {
 
 
 
-// Problem 2:
 
 function reverseString (input : string) : string{
     let arr : string[] = []
@@ -22,22 +20,22 @@ function reverseString (input : string) : string{
 
 
 
-// Problem 3:
+
 
 type StringOrNumber = string | number;
 
 function checkType (input : StringOrNumber) {
     if(typeof input === 'string'){
-        return '"String";'
+        return 'String'
     }
     else if(typeof input === 'number'){
-        return '"Number";'
+        return 'Number'
     }
 }
 
 
 
-// Problem 4:
+
 
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
     return obj[key]
@@ -45,7 +43,7 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 
 
 
-// Problem 5:
+
 
 interface Book{
     title : string;
@@ -66,7 +64,6 @@ function toggleReadStatus (obj : Book) : Book & {isRead : boolean} {
 
 
 
-// Problem 6:
 
 
 class Person {
@@ -88,13 +85,13 @@ class Student extends Person{
     }
 
     getDetails () {
-        return `"Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}";`
+        return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`
     }
 }
 
 
 
-// Problem 7:
+
 
 
 function getIntersection (arr1 : number[] , arr2 : number[]) : number[] {
@@ -107,4 +104,6 @@ function getIntersection (arr1 : number[] , arr2 : number[]) : number[] {
     return commonArray;
 }
 
-console.log(getIntersection([1, 2, 2, 3], [2, 2, 3]));
+
+
+
